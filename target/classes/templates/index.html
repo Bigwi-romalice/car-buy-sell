@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Start page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('/img/index.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 1px 0; /* Reduced padding for smaller height */
+            font-size: 0.9em; /* Optional: slightly smaller font */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div th:insert="~{fragments/navbar :: navbar}"></div>
+
+<div class="position-absolute top-50 start-50 translate-middle text-center text-white bold">
+    <h1>Linking you with cars that match your aspirations..</h1>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    <p>Contact us: bigwiromalice7@gmail.com.com | Phone: 0789412295</p>
+</footer>
+
+</body>
+</html>
